@@ -1,0 +1,21 @@
+{
+  "name": "proiect-tss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Tudor Nicu-Cornel ; Dura Alexandru-Bogdan ; Popescu Florin-Daniel ; Militaru Andrei-Alexandru",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^2.1.0",
+    "node": "^18.20.2",
+    "selenium-webdriver": "^4.19.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "puppeteer": "^22.6.5"
+  }
+}
