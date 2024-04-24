@@ -10,7 +10,7 @@ async function productPage(driver, By, until){
         }catch (error) {
             console.error("Timeout error: Element with selector '#produse' not found within the specified timeout.");
         }
-
+        
         const isElementVisible = await waitForElementVisibility(driver, productPageContainer, 1200);
 
         assert.ok(isElementVisible, 'NoSuchContainer: Product page container not found');
