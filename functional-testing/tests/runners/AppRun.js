@@ -2,6 +2,8 @@ const { openChrome, getDriver } = require("../../configurations/Chrome");
 const { startPage } = require("../../pages/BasePage");
 const { productPage } = require("../../pages/ProductPage");
 const { filtrareDetalii } = require("../runners/js-tests/Input");
+const { pretMin } = require("../runners/js-tests/pretMin");
+const { mediePreturi } = require("../runners/js-tests/mediePreturi");
 
 async function runApp() {
   await openChrome();
@@ -15,6 +17,10 @@ async function runApp() {
   await productPage(driver, By, until);
 
   await filtrareDetalii(driver, By, until);
+
+  await pretMin(driver, By, until);
+
+  await mediePreturi(driver, By, until);
 
   driver.quit();
 }
